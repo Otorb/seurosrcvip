@@ -1,0 +1,263 @@
+.homepagebackground2 {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 100px;
+    background-image: url(../../assets/mainImage.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .row {
+    padding-top: 80px;
+  }
+  
+  .wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+  .Typewriter__wrapper {
+    font-size: 2.0em !important;
+    color: white !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+  }
+  .Typewriter__cursor {
+    font-size: 2.4em !important;
+    color: white !important;
+  }
+  .bgtitle{
+    margin-top: 70px;
+    background-color: rgba(44, 38, 36 , 0.6);
+    border-radius: 20px;
+    width: 900px;
+  }
+  .segurosvip{
+    color: #d4ac0d;
+}
+  .headtext {
+    padding-top: 120px;
+    font-size: 2.4em !important;
+    color: white !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+  }
+  .nametext {
+    font-size: 5.0em !important;
+    color: white !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+    margin-left: 15px;
+  }
+  .nametext2 {
+    font-size: 2.0em !important;
+    color: white !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+    margin-left: 15px;
+   
+  }
+  .imagedeveloper {
+    margin-top: 50px;
+    max-width: 550px;
+    height: 400px;
+    /*background-image: url(../Assets/Web-designer-1024x821.webp);*/
+    background-size: cover;
+    background-position: center;
+  }
+  .socailmediabtn {
+    margin-top: 2rem;
+    width: 90px;
+    height: 45px;
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+  }
+  .socailmediabtn:hover {
+    background-color: antiquewhite;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+    opacity: 0.6;
+  }
+  .icon {
+    font-size: 30px;
+  }
+  .certificado{
+    margin-top: 25px;
+    font-size: 2.0em !important;
+    color: white !important;
+    font-weight: 600 !important;
+    letter-spacing: 1px !important;
+  }
+  
+  
+  .outline-btn {
+    margin-top: 25px;
+    background: linear-gradient(180deg, #35bb23 26.71%, #63e029 99.36%);
+    box-shadow: 0px 20px 24px 3px rgba(129, 189, 32, 0.42);
+    border-radius: 34px;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 11px 26px 11px 26px;
+    margin-left: 5rem;
+  }
+
+  .btnFlotante2 {
+    border-radius: 10px;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    z-index: 99;
+    width: 170px;
+    height: 80px;
+    color: white;
+    background-color: #e4bb14;
+    background-image: linear-gradient(43deg, #a46c03 0%, #92bc06 100%);
+  }
+  .btnFlotante {
+    border-radius: 200px;
+    position: fixed;
+    bottom: 40px;
+    left: 40px;
+    transition: all 300ms ease 0ms;
+    z-index: 99;
+    width: 80px;
+    height: 80px;
+  }
+  
+  .btnFlotante:hover {
+    background-color: #eeeeee;
+    transform: translateY(-7px);
+  }
+  
+  .btnFlotante2:hover {
+    background-color: #eeeeee;
+    transform: translateY(-7px);
+  }
+  .outline-btn:hover {
+    background: white;
+    cursor: pointer;
+    color: var(--orange);
+  }
+  @media (max-width: 998px) {
+    .bgtitle{
+        background-color: rgba(44, 38, 36 , 0.6);   
+        border-radius: 20px;
+        width: 600px;
+      }
+  }
+  @media (max-width: 767px) {
+    .homepagebackground2 {
+      background-image: none;
+    }
+    .homepagebackground {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .row {
+      padding-top: 50px;
+    }
+  
+    .Typewriter__wrapper {
+      font-size: 1.9em !important;
+      color: black !important;
+    }
+    .Typewriter__cursor {
+      font-size: 2.2em !important;
+      color: black !important;
+    }
+    .headtext {
+      padding-top: 100px;
+      font-size: 2em !important;
+      color: black !important;
+    }
+    .nametext {
+      font-size: 2.4em !important;
+      color: black !important;
+    }
+    .nametext2 {
+        font-size: 1.4em !important;
+        color: black !important;
+      }
+    .certificado{
+      margin-top: 20px;
+      font-size: 1.4em !important;
+      color: black !important;
+    }
+  
+    .imagedeveloper {
+      margin-top: 50px;
+      max-width: 420px;
+      max-height: 400px;
+      background-image: url(../../assets/mainImage.jpg); 
+    }
+    .socailmediabtn {
+      margin-top: 1rem;
+    }
+    .outline-btn{
+      margin-top: 20px;
+    }
+    .bgtitle{
+        background-color: white;
+        border-radius: 20px;
+        width: 500px;
+      }
+      .btnFlotante {
+        font-size: 14px;
+        padding: 12px 20px;
+        bottom: 20px;
+        left: 20px;
+      }
+      .btnFlotante2 {
+        font-size: 14 px;
+        padding: 12px 20px;
+        bottom: 20px;
+        right: 20px;
+      }
+   
+  }
+  @media (max-width: 515px) {
+    .bgtitle{
+    
+        border-radius: 20px;
+        width: 400px;
+      }
+  }
+  @media (max-width: 398px) {
+    .bgtitle{
+    
+        border-radius: 20px;
+        width: 300px;
+      }
+  }
