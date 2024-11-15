@@ -420,21 +420,26 @@ function DocuPfd() {
         >
           OTRO{" "}
         </Text>
-        <Text
+
+        <Image 
+          src="https://t4.ftcdn.net/jpg/00/72/71/15/360_F_72711585_7eiKcdeXcSpyzq9e4rvWC96uTywimcPk.jpg"
           style={{
-            top: "580px",
+            top: "567px",
             left: "145px",
             position: "absolute",
             display: "block",
             fontSize: "12px",
+            width: "70px", 
+            height: "30px"
           }}
-        >
-          firma{" "}
-        </Text>
+          alt="imagen firma cliente"
+        />
+
+
         <Text
           style={{
             top: "580px",
-            left: "200px",
+            left: "208px",
             position: "absolute",
             display: "block",
             fontSize: "12px",
@@ -443,7 +448,7 @@ function DocuPfd() {
           cedula{" "}
         </Text>
         <Image 
-          src="https://t4.ftcdn.net/jpg/00/72/71/15/360_F_72711585_7eiKcdeXcSpyzq9e4rvWC96uTywimcPk.jpg"
+          src="https://i.postimg.cc/FRS21dJh/firma.png"
           style={{
             top: "560px",
             left: "370px",
