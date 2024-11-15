@@ -42,6 +42,7 @@ function Poliza() {
     estado: "",
     ciudad: "",
     sector: "",
+    bolivares: "",
     imagenCedula: "",
     imagenFirma: "",
     imagenCarnet: "",
@@ -99,7 +100,7 @@ function Poliza() {
   };
   return (
     <Fragment>
-      {user ? (
+      {user?.email === "segurosvip2020@gmail.com"? (
         <div class="font-[sans-serif]">
           <button
             onClick={handleSignOut}
@@ -175,9 +176,21 @@ function Poliza() {
                   />
                 </div>
                 <div>
+                  <ul>Bolivares</ul>
+                  <input
+                    type="text"
+                    placeholder="monto en bs"
+                    class="w-96 rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]"
+                    name="bolivares"
+                    value={formDocument.bolivares}
+                    onChange={handleChange}
+                  />
+                </div>
+             
+                <div>
                   <ul>Fecha Inicio</ul>
                   <input
-                    type="date"
+                    type="text"
                     placeholder="Fecha Inicio"
                     class="w-96 rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]"
                     name="inicio"
@@ -199,7 +212,7 @@ function Poliza() {
                 <div> 
                   <ul>Fecha Fin</ul>
                   <input
-                    type="date"
+                    type="text"
                     placeholder="Fecha fin"
                     class="w-96 rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]"
                     name="fechaFin"
@@ -329,7 +342,11 @@ function Poliza() {
                     </div>
                   )}
                 </div>
-
+                <div>
+                </div>
+                <div>
+                 
+                </div>
                 <br></br>
 
                 <h2 class="text-xl text-gray-800 font-bold"></h2>
@@ -397,8 +414,8 @@ function Poliza() {
                     type="text"
                     placeholder="Año"
                     class="w-96 rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]"
-                    name="año"
-                    value={formDocument.año}
+                    name="ano"
+                    value={formDocument.ano}
                     onChange={handleChange}
                   />
                 </div>

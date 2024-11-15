@@ -200,7 +200,7 @@ function DocuPfd({props}) {
             fontSize: "12px",
           }}
         >
-          año{props.ano}
+          {props.ano}
         </Text>
         <Text
           style={{
