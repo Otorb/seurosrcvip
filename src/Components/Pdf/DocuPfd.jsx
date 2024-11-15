@@ -424,7 +424,7 @@ function DocuPfd({props}) {
         </Text>
 
         <Image 
-          src="https://t4.ftcdn.net/jpg/00/72/71/15/360_F_72711585_7eiKcdeXcSpyzq9e4rvWC96uTywimcPk.jpg"
+          src={`${props.imagenFirma[0].url}`}
           style={{
             top: "567px",
             left: "145px",

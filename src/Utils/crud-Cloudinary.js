@@ -14,7 +14,7 @@ export async function getImageCloudinaryObject(name, file) {
     // }
   
   
-    const response = await fetch('http://localhost:3002/cloudinary', {
+    const response = await fetch('https://backseguros.onrender.com/cloudinary', {
       method: "POST",
       body: formData
     });

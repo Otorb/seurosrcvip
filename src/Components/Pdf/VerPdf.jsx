@@ -3,16 +3,17 @@ import { PDFViewer } from "@react-pdf/renderer";
 import DocuPfd from './DocuPfd';
 
 function VerPdf() {
-  const [data, setData] = React.useState(null);
+  const [data, setData] = React.useState(JSON.parse(localStorage.getItem("formData")));
 
-  React.useEffect(() => {
-    // Recuperar los datos del localStorage
-    const storedData = localStorage.getItem("formData");
-    if (storedData) {
-      setData(JSON.parse(storedData));
-    }
-  }, []);
-  console.log(data, "data");
+  // React.useEffect(() => {
+  //   // Recuperar los datos del localStorage
+  //   const storedData = JSON.parse(localStorage.getItem("formData"));
+  //   console.log(storedData, "storedData");
+  //   if (storedData) {
+  //     setData(JSON.parse(storedData));
+  //   }
+  // }, []);
+  console.log( "data",data);
   
   return (
     <PDFViewer style={{ width: "100%", height: "90vh" }}>
