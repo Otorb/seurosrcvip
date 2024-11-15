@@ -1,7 +1,7 @@
 import React from "react";
 import { useState, Fragment, useEffect } from "react";
 import { getAuth, signOut, onAuthStateChanged } from "firebase/auth";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import rcv from '../../assets/rcv.jpeg'
 import { getImageCloudinaryObject } from '../../Utils/crud-Cloudinary'
 import Modal from "../Modal/Modal";
@@ -30,6 +30,11 @@ function Poliza() {
   };
 
   const [formDocument, setFormDocument] = useState({
+    numero:"",
+    inicio:"",
+    horaInicio:"",
+    fechaFin:"",
+    horaFin:"",
     nombre: "",
     cedula: "",
     correo: "",
@@ -51,9 +56,10 @@ function Poliza() {
     color: "",
     motor: "",
     carroceria: "",
+    tcr:"",
   });
   const [submitted, setSubmitted] = useState(false);
-  const [showModal, setShowModal] = useState(false);
+  const [formulario, setFormulario] = useState(false);
   // Function to handle form input changes
   const handleChange = (e) => {
     setFormDocument({
@@ -82,7 +88,14 @@ function Poliza() {
   // Function to handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
+    const newWindow = window.open("/pdf")
+    if(!newWindow){
+        console.error("la ventana esta bloqueada")
+    }
     setSubmitted(true);
+    setFormulario(true)
+    localStorage.setItem("formData", JSON.stringify(formDocument));
+    console.log("Datos guardados:", formDocument);
   };
   return (
     <Fragment>
@@ -136,6 +149,72 @@ function Poliza() {
                     class="w-96 rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]"
                     name="correo"
                     value={formDocument.correo}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <ul>Numero de poliza</ul>
+                  <input
+                    type="numero"
+                    placeholder="N° Poliza"
+                    class="w-96 rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]"
+                    name="numero"
+                    value={formDocument.numero}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <ul>TCR</ul>
+                  <input
+                    type="text"
+                    placeholder="N° Poliza"
+                    class="w-96 rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]"
+                    name="tcr"
+                    value={formDocument.tcr}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <ul>Fecha Inicio</ul>
+                  <input
+                    type="date"
+                    placeholder="Fecha Inicio"
+                    class="w-96 rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]"
+                    name="inicio"
+                    value={formDocument.inicio}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                  <ul>Hora Inicio</ul>
+                  <input
+                    type="text"
+                    placeholder="Hora Inicio"
+                    class="w-96 rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]"
+                    name="horaInicio"
+                    value={formDocument.horaInicio}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div> 
+                  <ul>Fecha Fin</ul>
+                  <input
+                    type="date"
+                    placeholder="Fecha fin"
+                    class="w-96 rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]"
+                    name="fechaFin"
+                    value={formDocument.fechaFin}
+                    onChange={handleChange}
+                  />
+                </div>
+                <div>
+                <ul>Hora Fin</ul>
+                  <input
+                    type="text"
+                    placeholder="Hora Fin"
+                    class="w-96 rounded-lg py-2.5 px-4 border border-gray-300 text-sm outline-[#007bff]"
+                    name="horaFin"
+                    value={formDocument.horaFin}
                     onChange={handleChange}
                   />
                 </div>
@@ -391,18 +470,20 @@ function Poliza() {
                 </div>
 
                 <button
-                  type="button"
+                 type="button"
+                 onClick={handleSubmit } 
                   class="rounded-lg px-2 border border-gray-300 text-sm outline-[#007bff]  "
-                  onClick={() => setShowModal(true)}
                 >
-                  Pagar
+                  Guardar
                 </button>
               </form>
-              <Modal
+              
+
+              {/* <Modal
                 isVisible={showModal}
                 documents={formDocument}
                 onClose={() => setShowModal(false)}
-              />
+              /> */}
             </div>
           </div>
         </div>

@@ -1,6 +1,8 @@
 import {Document, Image, Page, Text, View} from '@react-pdf/renderer';
 
-function DocuPfd() {
+function DocuPfd({props}) {
+  console.log(props, "props");
+  
   return (
     <Document
     style={{
@@ -33,7 +35,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          numero{" "}
+          {props.numero}
         </Text>
         <Text
           style={{
@@ -44,7 +46,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          05 03{" "}
+          {props.inicio}
         </Text>
         <Text
           style={{
@@ -55,7 +57,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          15 30{" "}
+          {props.horaInicio}
         </Text>
         <Text
           style={{
@@ -66,7 +68,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          05 03{" "}
+          {props.fechaFin}
         </Text>
         <Text
           style={{
@@ -77,7 +79,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          15 30{" "}
+          {props.horaFin}
         </Text>
         <Text
           style={{
@@ -88,7 +90,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          Nombre del Cliente{" "}
+          {props.nombre}
         </Text>
         <Text
           style={{
@@ -99,7 +101,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          documento{" "}
+          {props.cedula}
         </Text>
         <Text
           style={{
@@ -110,7 +112,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          telefono{" "}
+          {props.telefono}
         </Text>
         <Text
           style={{
@@ -121,7 +123,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          Estado{" "}
+          {props.estado}
         </Text>
         <Text
           style={{
@@ -132,7 +134,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          Ciudad{" "}
+          {props.ciudad}
         </Text>
         <Text
           style={{
@@ -143,7 +145,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          Sector{" "}
+          {props.sector}
         </Text>
         <Text
           style={{
@@ -154,7 +156,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          placa{" "}
+          {props.placa}
         </Text>
         <Text
           style={{
@@ -165,7 +167,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          marca{" "}
+          {props.marca}
         </Text>
         <Text
           style={{
@@ -176,7 +178,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          modelo{" "}
+          {props.modelo}
         </Text>
         <Text
           style={{
@@ -187,7 +189,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          tipo{" "}
+          {props.tipo}
         </Text>
         <Text
           style={{
@@ -198,7 +200,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          año{" "}
+          año{props.ano}
         </Text>
         <Text
           style={{
@@ -209,7 +211,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          clase{" "}
+          {props.clase}
         </Text>
         <Text
           style={{
@@ -220,7 +222,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          10{" "}
+          {props.puesto}
         </Text>
         <Text
           style={{
@@ -231,7 +233,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          400{" "}
+          {props.carga}
         </Text>
         <Text
           style={{
@@ -242,7 +244,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          color{" "}
+          {props.color}
         </Text>
         <Text
           style={{
@@ -253,7 +255,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          serial{" "}
+          {props.motor}
         </Text>
         <Text
           style={{
@@ -264,7 +266,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          carroceria{" "}
+          {props.carroceria}
         </Text>
         <Text
           style={{
@@ -275,7 +277,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          punto{" "}
+          .
         </Text>
         <Text
           style={{
@@ -286,7 +288,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          ejecutivo{" "}
+          .
         </Text>
         <Text
           style={{
@@ -297,7 +299,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          tcr{" "}
+          {props.tcr}
         </Text>
         <Text
           style={{
@@ -308,7 +310,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          bolivar{" "}
+          .
         </Text>
         <Text
           style={{
@@ -319,7 +321,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          bolivar2{" "}
+          .
         </Text>
         <Text
           style={{
@@ -330,7 +332,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          S{" "}
+          .
         </Text>
         <Text
           style={{
@@ -341,7 +343,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          N{" "}
+          .
         </Text>
         <Text
           style={{
@@ -352,7 +354,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          100{" "}
+          .
         </Text>
         <Text
           style={{
@@ -363,7 +365,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          E{" "}
+          .
         </Text>
         <Text
           style={{
@@ -374,7 +376,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          D{" "}
+         .
         </Text>
         <Text
           style={{
@@ -385,7 +387,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          B{" "}
+          .
         </Text>
         <Text
           style={{
@@ -396,7 +398,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          P{" "}
+          .
         </Text>
         <Text
           style={{
@@ -407,7 +409,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          V{" "}
+          .
         </Text>
         <Text
           style={{
@@ -418,7 +420,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          OTRO{" "}
+          .
         </Text>
 
         <Image 
@@ -445,18 +447,18 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          cedula{" "}
+          {props.cedula}
         </Text>
         <Image 
           src="https://i.postimg.cc/FRS21dJh/firma.png"
           style={{
-            top: "560px",
+            top: "540px",
             left: "370px",
             position: "absolute",
             display: "block",
             fontSize: "12px",
-            width: "50px", 
-            height: "50px"
+            width: "100px", 
+            height: "80px"
           }}
           alt="imagen firma"
         />
@@ -471,7 +473,7 @@ function DocuPfd() {
             fontSize: "12px",
           }}
         >
-          numero{" "}
+          {props.numero}
         </Text>
         <Text
           style={{
@@ -482,7 +484,7 @@ function DocuPfd() {
             fontSize: "10px",
           }}
         >
-          s{" "}
+         .
         </Text>
         <Text
           style={{
@@ -493,7 +495,7 @@ function DocuPfd() {
             fontSize: "10px",
           }}
         >
-          n{" "}
+         .
         </Text>
         <Text
           style={{
@@ -504,7 +506,7 @@ function DocuPfd() {
             fontSize: "10px",
           }}
         >
-          100{" "}
+          .
         </Text>
         <Text
           style={{
@@ -515,7 +517,7 @@ function DocuPfd() {
             fontSize: "10px",
           }}
         >
-          03 10{" "}
+          {props.inicio}
         </Text>
         <Text
           style={{
@@ -526,7 +528,7 @@ function DocuPfd() {
             fontSize: "10px",
           }}
         >
-          03 10{" "}
+          {props.fechaFin}
         </Text>
        
         <Text
@@ -538,7 +540,7 @@ function DocuPfd() {
             fontSize: "10px",
           }}
         >
-          Datos del Cliente{" "}
+          {props.nombre}
         </Text>
         <Text
           style={{
@@ -549,7 +551,7 @@ function DocuPfd() {
             fontSize: "10px",
           }}
         >
-          Documento{" "}
+          {props.cedula}
         </Text>
         <Text
           style={{
@@ -560,7 +562,7 @@ function DocuPfd() {
             fontSize: "10px",
           }}
         >
-          marca{" "}
+          {props.marca}
         </Text>
         <Text
           style={{
@@ -571,7 +573,7 @@ function DocuPfd() {
             fontSize: "10px",
           }}
         >
-          modelo{" "}
+          {props.modelo}
         </Text>
         <Text
           style={{
@@ -582,7 +584,7 @@ function DocuPfd() {
             fontSize: "10px",
           }}
         >
-          año{" "}
+          {props.ano}
         </Text>
         <Text
           style={{
@@ -593,7 +595,7 @@ function DocuPfd() {
             fontSize: "10px",
           }}
         >
-          color{" "}
+          {props.color}
         </Text>
         <Text
           style={{
@@ -604,7 +606,7 @@ function DocuPfd() {
             fontSize: "10px",
           }}
         >
-          placa{" "}
+          {props.placa}
         </Text>
         <Text
           style={{
@@ -615,7 +617,7 @@ function DocuPfd() {
             fontSize: "10px",
           }}
         >
-          serial{" "}
+          {props.carroceria}
         </Text>
       </View>
     </Page>
