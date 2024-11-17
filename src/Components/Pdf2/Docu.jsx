@@ -22,7 +22,7 @@ function Docu({props}) {
         }}
       >
         <Image
-          src="https://i.ibb.co/VTqDhYx/formato2.jpg"
+          src="https://res.cloudinary.com/dtyhrf2xp/image/upload/v1731843434/pagina_1_vfp0wj.jpg"
           alt="image base"
           style={{ maxWidth: "1100px", maxHeight: "800" }}
         />
@@ -626,9 +626,9 @@ function Docu({props}) {
     </Page>
     <Page size="A4">
     <Image
-          src="https://i.ibb.co/kQpz5cF/formato1.jpg"
+          src="https://res.cloudinary.com/dtyhrf2xp/image/upload/v1731843097/pagina_2_uxmxk0.jpg"
           alt="image base"
-          style={{ maxWidth: "1100px", maxHeight: "800" }}
+          style={{ maxWidth: "1000px", maxHeight: "800" }}
         />
         <Image 
           src="https://i.postimg.cc/FRS21dJh/firma.png"
