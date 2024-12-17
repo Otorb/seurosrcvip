@@ -100,7 +100,7 @@ function Poliza() {
   };
   return (
     <Fragment>
-      {user?.email === "segurosvip2020@gmail.com"? (
+      {user?.email === "segurosvip2020@gmail.co"? (
         <div class="font-[sans-serif]">
           <button
             onClick={handleSignOut}
