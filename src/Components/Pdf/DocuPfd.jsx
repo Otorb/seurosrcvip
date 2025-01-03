@@ -22,7 +22,7 @@ function DocuPfd({ props }) {
           }}
         >
           <Image
-            src="https://res.cloudinary.com/dtyhrf2xp/image/upload/v1731843434/pagina_1_vfp0wj.jpg"
+            src="https://res.cloudinary.com/dtyhrf2xp/image/upload/v1732896353/g9uq072gybqqzuinq3qf.jpg"
             alt="image base"
             style={{ maxWidth: "1100px", maxHeight: "800" }}
           />
@@ -39,11 +39,11 @@ function DocuPfd({ props }) {
           </Text>
           <Text
             style={{
-              top: "142px",
-              left: "172px",
+              top: "144px",
+              left: "175px",
               position: "absolute",
               display: "block",
-              fontSize: "12px",
+              fontSize: "10px",
             }}
           >
             {props.inicio}
@@ -51,11 +51,11 @@ function DocuPfd({ props }) {
 
           <Text
             style={{
-              top: "142px",
-              left: "350px",
+              top: "144px",
+              left: "342px",
               position: "absolute",
               display: "block",
-              fontSize: "12px",
+              fontSize: "10px",
             }}
           >
             {props.fechaFin}
